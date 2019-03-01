@@ -4,6 +4,8 @@ import numpy as np
 import tensorflow as tf
 
 # w is the parameter we're adjusting so that we can complete our optimization objective, so we declare it as a TF Variable
+# You can add a variable to a TF computational graph by using the Variable object
+# TF Variables are stateful objects that maintain state in the computational graph across calls to Session.run()
 w = tf.Variable(0, dtype = tf.float32)
 
 # What if optimization objective is a function of input training data?
