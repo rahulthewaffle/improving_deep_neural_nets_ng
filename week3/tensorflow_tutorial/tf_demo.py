@@ -10,6 +10,8 @@ w = tf.Variable(0, dtype = tf.float32)
 
 # What if optimization objective is a function of input training data?
 # placeholder function tells TF that this object is something you will provide values for later
+# Pass in values for placeholder objects using the session's feed dictionary argument, ie:
+# feed_dict = { placeholder_name: input_data}
 x = tf.placeholder(tf.float32, [3,1])
 
 coefficient = np.array([1.], [-10.], [25.]) # values for x
